@@ -1,5 +1,5 @@
-$drupalurl = "http://ftp.drupal.org/files/projects/drupal-7.23.tar.gz"
-$drupalver = "drupal-7.23"
+$drupalurl = "http://ftp.drupal.org/files/projects/openatrium-7.x-2.0-beta3-core.tar.gz"
+$drupalver = "openatrium-7.x-2.0-beta3-core"
 $puppetver = "2.7.22-1puppetlabs1"
 $db_password = "time2shine"
 $home = "/home/vagrant"
@@ -9,7 +9,7 @@ exec { "update":
   path    => "/usr/bin"
 }
 
-package { ["apache2", "mysql-server", "git-core", "php5", "php5-mysql", "php5-gd"]:
+package { ["apache2", "mysql-server", "php5", "php5-fpm", "php5-mysql", "php5-gd", "drush", "git-core", "git-doc", "build-essential", "curl", "postfix", "unzip", "patch"]:
   ensure => present,
   require => Exec["update"],
   before => [Exec["createdb"], User["www-data"], File["/etc/apache2/conf.d/drupal.conf"]]
@@ -31,7 +31,7 @@ file { "/etc/apache2/conf.d/drupal.conf":
 </Directory>
 <VirtualHost *:80>
   DocumentRoot /var/www/current
-  ServerName local.drupalground.com
+  ServerName dev.domain.com
 </VirtualHost>"
 }
 
