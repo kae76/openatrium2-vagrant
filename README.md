@@ -16,7 +16,7 @@ VirtualBox is a virtualization software to provide the work
 horse of the virtual machine operations and isolation of environments
 and resources.
 
-### [Vagrant][2]
+### [Vagrant][1]
 
 
 Vagrant is a virtualization utility to provide an easier to use
