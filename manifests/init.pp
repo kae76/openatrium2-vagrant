@@ -101,3 +101,4 @@ exec { "createdb":
   path => ["/bin", "/usr/bin"],
   onlyif => "echo 'show databases;' | mysql -u root | grep drupal | awk '{print length}'"
 } 
+
