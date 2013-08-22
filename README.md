@@ -1,7 +1,7 @@
 Instant Drupal
 =============
 
-Vagrant and puppet team up to spin up a brand new instance of a Drupal web server.
+Vagrant and Puppet team up to spin up a brand new instance of a Drupal web server.
 
 Use Virtual machines to isolate your development environment.  Abstract project
 dependencies to the VMs and leave your host stable and productive.  
