@@ -30,7 +30,7 @@ Clone the repo into your home directory. Commands issued in this directory
 will be executed against the configuration and the VM that spawns from it.
 
 ```bash
-git clone git@github.com:MFoster/instantdrupal.git 
+git@github.com:waako/openatrium2-vagrant.git 
 ```
 
 Now change into the newly created directory and issue the 
